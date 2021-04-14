@@ -68,6 +68,12 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!--jta+atomikos分布式事务-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jta-atomikos</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -115,8 +121,6 @@
                     <include>**/*.*</include>
                 </includes>
             </resource>
-
-
         </resources>
     </build>
 
@@ -125,6 +129,8 @@
             <id>spring-snapshots</id>
             <url>http://repo.spring.io/libs-snapshot</url>
         </repository>
+
+
     </repositories>
     <pluginRepositories>
         <pluginRepository>

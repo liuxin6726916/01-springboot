@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    #自己指定的配置，spring读不到，需要自己去读
+    userdb:
+      password: ythpt_123
+      username: ythpt
+      driverClassName: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://10.100.32.189:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+    goodsdb:
+      password: ythpt_123
+      username: ythpt
+      driverClassName: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://10.100.32.189:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+    orderdb:
+      password: ythpt_123
+      username: ythpt
+      driverClassName: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://10.100.32.189:3306/test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+
+  #配置前端展示使用jsp，因为springboot内部就是spring+spring mvc
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
